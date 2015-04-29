@@ -60,10 +60,7 @@
 // Add JS file
 if(TL_MODE == 'BE')
 {
-	$ordnerscan = scandir('../assets/jquery/core/'); // jQuery-Ordner durchsuchen.
-	//letzten Ordner/Version nutzen
-	
-    $GLOBALS['TL_JAVASCRIPT'][] = 'assets/jquery/core/'.$ordnerscan[count($ordnerscan)-1].'/jquery.min.js';
+    	$GLOBALS['TL_JAVASCRIPT'][] = 'assets/jquery/core/' . $GLOBALS['TL_ASSETS']['JQUERY'] . '/jquery.min.js|static';
 	$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/be__jQuery/assets/noconflict.js';
 } 
 
