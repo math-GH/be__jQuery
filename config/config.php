@@ -60,12 +60,9 @@
 // Add JS file
 if(TL_MODE == 'BE')
 {
-    	$GLOBALS['TL_JAVASCRIPT'][] = 'assets/jquery/core/' . $GLOBALS['TL_ASSETS']['JQUERY'] . '/jquery.min.js|static';
+    	$GLOBALS['TL_JAVASCRIPT'][] = 'assets/jquery/core/' . $GLOBALS['TL_ASSETS']['JQUERY'] . '/jquery.min.js';
 	$GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/be__jQuery/assets/noconflict.js';
 } 
 
-
-
- 
 
 ?>
